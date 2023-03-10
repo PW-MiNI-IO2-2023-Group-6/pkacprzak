@@ -10,7 +10,7 @@ namespace Calculator
     {
         public int Calculate(string arg)
         {
-            if (arg == "") return 12;
+            if (arg == "") return 0;
             var numSplit = arg.Split(',', '\n').Select(str => int.Parse(str));
             foreach (var num in numSplit)
             {
