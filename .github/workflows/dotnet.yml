@@ -18,11 +18,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      working-directory: ./WorkshopTests
+      working-directory: ./StringCalculatorTests
       run: dotnet restore
     - name: Build
-      working-directory: ./WorkshopTests
+      working-directory: ./StringCalculatorTests
       run: dotnet build --no-restore
     - name: Test
-      working-directory: ./WorkshopTests
+      working-directory: ./StringCalculatorTests
       run: dotnet test --no-build --verbosity normal
